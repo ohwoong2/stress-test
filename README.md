@@ -35,3 +35,16 @@ stress-ng --vm 2 --vm-bytes 8G --timeout 15s --metrics-brief
 ![image.png](https://img.notionusercontent.com/s3/prod-files-secure%2Fec5b0c54-e4b8-4aab-9659-c6c25e0c5f35%2F6ab0c6fe-9bca-4831-a739-028926655e55%2Fimage.png/size/w=2000?exp=1728373265&sig=Nvm6OI6rdPwyHef0yJ7q0X32QLjPWyMiKV7-Fr6YTFI)
 
 ![image.png](https://img.notionusercontent.com/s3/prod-files-secure%2Fec5b0c54-e4b8-4aab-9659-c6c25e0c5f35%2F9ddffc9b-709a-4ad6-8d21-5cafc03368f6%2Fimage.png/size/w=2000?exp=1728373222&sig=IHgfYO25rTKNRjufO3TxHrehjnZs_Ui_OrVl4MTREuM)
+
+
+## AapacheBench를 사용한 HTTP 부하 테스트
+### ApacheBench설치
+```sudo apt-get update
+sudo apt-get install apache2-utils
+```
+### 테스트 명령어
+```# 총 n번의 요청, c개의 동시 요청
+ab -n 3000 -c 100 <http://localhost:80/>
+```
+### 결과 확인
+![image](https://github.com/user-attachments/assets/30ec48f0-0bdb-4242-adcd-0c8f00d810a4)
